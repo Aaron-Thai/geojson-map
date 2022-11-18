@@ -5,7 +5,7 @@ let map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/navigation-night-v1', // style URL
     zoom: 9, // starting zoom
-    center: [-122.1,47.45] // starting center
+    center: [-122.2,47.45] // starting center
 }); 
 
 async function geojsonFetch() {
@@ -92,7 +92,7 @@ async function geojsonFetch() {
 geojsonFetch();
 
 // connect html element button to our code
-let btn = document.getElementsByTagName("button")[0];
+let btn = document.getElementById("sort-button");
 btn.addEventListener('click', sortTable);
 
 // sort the table alphabetically with localeCompare

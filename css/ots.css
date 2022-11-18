@@ -14,17 +14,19 @@ body {
     flex-basis: 500px;
     overflow-y: scroll;
     margin: 10px;
+    z-index: 1;
 }
 
 #map {
     flex-grow: 1;
+    width: 100%;
 }
 
 #text-description {
     background-color: aquamarine;
 }
 
-button {
+#sort-button {
     margin-bottom: 10px;
 }
 
@@ -33,6 +35,7 @@ table {
     border-spacing: 0;
     width: 100%;
     border: 1px solid #ddd;
+    z-index: 1;
 }
 
 th,
